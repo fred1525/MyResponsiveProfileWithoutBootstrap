@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  background-color: #eee;
+}
+.top-header {
+  background-color: #fff;
+  border-bottom: #ccc 2px solid;
+}
+.menu {
+  display: none;
+}
+header {
+  width:980px;
+  height: 80px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  margin:0;
+}
+li {
+  list-style: none;
+  display: inline;
+  padding: 0 5px;
+}
+a {
+  text-decoration: none;
+  color: #777;
+}
+nav {
+  width: 300px;
+  line-height: 80px;
+  color:#777;
+  float: right;
+}
+h1 {
+  margin:0;
+  width: 240px;
+  height: 80px;
+  float: left;
+  background-color: #4aaaa5;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}
+h2 {
+  color: #4aaaa5;
+}
+.main {
+  box-sizing: border-box;
+  width: 980px;
+  background-color: #fff;
+  padding: 20px;
+  margin:20px auto 100px;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+hr {
+  border-width: 1px;
+  border-style: solid;
+  color: #ccc;
+  border-color: #ccc;
+}
+.cat {
+  float: left;
+  padding-right: 20px;
+  width: 20%;
+  height: auto;
+}
+p {
+  line-height: 2;
+  margin: 0;
+  color: #777;
+  margin-bottom: 20px;
+}
+footer {
+  text-align: center;
+  height: 120px;
+  background-color: #666;
+  border-top: 3px solid #4aaaa5;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  line-height: 6;
+  color: #777;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 18px;
+  margin: 5px 0;
+}
+textarea {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+button {
+  border-radius: none;
+  background-color: #4aaaa5;
+  padding: 8px 20px;
+  color: #fff;
+  border: none;
+}
+.ph {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  float: left;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.placeholder {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.img-title {
+  position: relative;
+  top:200px;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #4aaaa5;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+
+  header {
+    width:100%;
+  }
+  .main {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+    margin:auto 0;
+  }
+  footer {
+    position: static;
+  }
+  .cat {
+    width: 100px;
+    height: auto;
+  }
+
+}
+@media (min-width: 641px) and (max-width: 768px) {
+
+  header {
+    width:100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  footer {
+    position: static;
+  }
+
+}
+@media (min-width: 769px) and (max-width: 980px) {
+
+  header {
+    width:100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+
+/*
+#fff main header background, main content background
+#4aaaa5 headings and backgrounds
+#777 regular font color
+#ccc header border color
+#666 footer background
+#ddd main content border color
+*/
